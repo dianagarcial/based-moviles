@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Editar {{id}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="datos.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Correo</ion-label>
+      <ion-input type="text" [(ngModel)]="datos.correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Universidad</ion-label>
+      <ion-input type="text" [(ngModel)]="datos.universidad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button routerLink="/home" round (click)="editar()">Guardar</ion-button>
+    </ion-item>
+  </ion-list>
+ 
+</ion-content>
